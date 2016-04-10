@@ -27,7 +27,7 @@ VOLUME ["/.config"]
 RUN curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-runner/script.deb.sh | sudo bash
 RUN sudo apt-get install -y gitlab-ci-multi-runner
 
-# Npm
+# NPM
 RUN curl -sL https://deb.nodesource.com/setup | sudo bash -
 RUN sudo apt-get install -y -qq nodejs
 
