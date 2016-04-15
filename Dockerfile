@@ -30,6 +30,7 @@ RUN sudo apt-get install -y gitlab-ci-multi-runner
 # NPM
 RUN curl -sL https://deb.nodesource.com/setup | sudo bash -
 RUN sudo apt-get install -y -qq nodejs
+RUN sudo npm install npm -g
 
 # Meteor
 RUN curl https://install.meteor.com/ | sh
