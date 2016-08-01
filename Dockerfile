@@ -50,7 +50,7 @@ RUN pip install --no-cache-dir virtualenv
 RUN pip install pyopenssl
 
 # Install the Google Cloud SDK.
-# archive gcloud sdk https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-105.0.0-linux-x86_64.tar.gz
+# archive gcloud sdk https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-119.0.0-linux-x86_64.tar.gz
 ENV HOME /
 ENV CLOUDSDK_PYTHON_SITEPACKAGES 1
 RUN wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-102.0.0-linux-x86_64.tar.gz && tar -zxvf google-cloud-sdk-102.0.0-linux-x86_64.tar.gz && rm google-cloud-sdk-102.0.0-linux-x86_64.tar.gz
