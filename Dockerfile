@@ -53,7 +53,7 @@ RUN pip install pyopenssl
 # archive gcloud sdk https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-119.0.0-linux-x86_64.tar.gz
 ENV HOME /
 ENV CLOUDSDK_PYTHON_SITEPACKAGES 1
-RUN wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-102.0.0-linux-x86_64.tar.gz && tar -zxvf google-cloud-sdk-102.0.0-linux-x86_64.tar.gz && rm google-cloud-sdk-102.0.0-linux-x86_64.tar.gz
+RUN wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-119.0.0-linux-x86_64.tar.gz && tar -zxvf google-cloud-sdk-119.0.0-linux-x86_64.tar.gz && rm google-cloud-sdk-119.0.0-linux-x86_64.tar.gz
 RUN google-cloud-sdk/install.sh --usage-reporting=true --path-update=true --bash-completion=true --rc-path=/.bashrc --additional-components app-engine-java app-engine-python app kubectl alpha beta
 
 # Disable updater check for the whole installation.
